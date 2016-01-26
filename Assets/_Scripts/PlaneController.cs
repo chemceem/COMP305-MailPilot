@@ -31,9 +31,22 @@ public class PlaneController : MonoBehaviour {
         {
             this._currentPosition -= new Vector2(this.speed, 0);
         }
+        this.CheckBounds();
 
         this._transform.position = this._currentPosition;
         Debug.Log(_playerInput);
+    }
+
+    private void CheckBounds()
+    {
+        if (this._currentPosition.x < -290)
+        {
+            this._currentPosition.x = -290;
+        }
+        if (this._currentPosition.x > 290)
+        {
+            this._currentPosition.x = 290;
+        }
     }
 
 }
