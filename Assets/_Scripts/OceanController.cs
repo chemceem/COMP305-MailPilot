@@ -8,7 +8,7 @@ public class OceanController : MonoBehaviour {
 	private Vector2 _currentPosition;
 
 	//PUBLIC INSTANCE VARIABLES
-	public float speed = 5;
+	public float speed = 5f;
 
 	// Use this for initialization
 	void Start () {
