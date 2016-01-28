@@ -33,8 +33,7 @@ public class PlaneController : MonoBehaviour {
         }
         this.CheckBounds();
 
-        this._transform.position = this._currentPosition;
-        Debug.Log(_playerInput);
+        this._transform.position = this._currentPosition;        
     }
 
     private void CheckBounds()
